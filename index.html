@@ -87,7 +87,7 @@ const CONFIG={LIFF_ID:"YOUR_LIFF_ID_HERE",GAS_URL:"https://script.google.com/mac
 let userProfile=null;
 const photoData={slip:null,work:null};
 window.addEventListener('load',async()=>{
-  try{await liff.init({liffId:CONFIG.LIFF_ID});if(liff.isLoggedIn()){userProfile=await liff.getProfile();}else{liff.login();return;}}
+const hasRealLiffId=CONFIG.LIFF_ID&&CONFIG.LIFF_ID!=='YOUR_LIFF_ID_HERE';if(hasRealLiffId){try{await Promise.race([liff.init({liffId:CONFIG.LIFF_ID}),new Promise((_,reject)=>setTimeout(()=>reject(new Error('timeout')),5000))]);if(liff.isLoggedIn()){userProfile=await liff.getProfile();}else{liff.login();return;}}catch(e){console.warn('[LIFF]',e.message);userProfile={displayName:'ทดสอบ',pictureUrl:'',userId:'dev'};}}else{console.info('[LIFF] dev mode');userProfile={displayName:'ทดสอบ',pictureUrl:'',userId:'dev'};
   catch(e){userProfile={displayName:'ทดสอบ',pictureUrl:'',userId:'dev'};}
   if(userProfile.pictureUrl)document.getElementById('userAvatar').src=userProfile.pictureUrl;
   document.getElementById('userName').textContent=userProfile.displayName;
