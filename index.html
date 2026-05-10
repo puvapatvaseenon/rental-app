@@ -29,31 +29,14 @@ body {
   background: rgba(255,255,255,.15); border-radius: 30px; padding: 6px 12px 6px 6px;
   width: fit-content; margin: 0 auto;
 }
-.avatar {
-  width: 32px; height: 32px; border-radius: 50%;
-  border: 2px solid rgba(255,255,255,.7); object-fit: cover;
-  background: #ccc;
-}
+.avatar { width: 32px; height: 32px; border-radius: 50%; border: 2px solid rgba(255,255,255,.7); object-fit: cover; background: #ccc; }
 .user-name { font-size: 13px; font-weight: 600; }
 .container { padding: 14px 14px 32px; max-width: 480px; margin: 0 auto; }
-.card {
-  background: #fff;
-  border-radius: 14px;
-  padding: 16px;
-  margin-bottom: 12px;
-  box-shadow: 0 1px 6px rgba(0,0,0,.08);
-}
-.section-label {
-  font-size: 11px; font-weight: 700; letter-spacing: .8px;
-  color: #2F5496; text-transform: uppercase; margin-bottom: 14px;
-  display: flex; align-items: center; gap: 6px;
-}
+.card { background: #fff; border-radius: 14px; padding: 16px; margin-bottom: 12px; box-shadow: 0 1px 6px rgba(0,0,0,.08); }
+.section-label { font-size: 11px; font-weight: 700; letter-spacing: .8px; color: #2F5496; text-transform: uppercase; margin-bottom: 14px; display: flex; align-items: center; gap: 6px; }
 .form-group { margin-bottom: 13px; }
 .form-group:last-child { margin-bottom: 0; }
-label {
-  display: block; font-size: 13px; font-weight: 600;
-  color: #444; margin-bottom: 5px;
-}
+label { display: block; font-size: 13px; font-weight: 600; color: #444; margin-bottom: 5px; }
 .req { color: #e74c3c; margin-left: 2px; }
 select, input[type="number"], input[type="date"], textarea {
   width: 100%; padding: 11px 13px;
@@ -64,85 +47,44 @@ select, input[type="number"], input[type="date"], textarea {
   -webkit-appearance: none; appearance: none;
   font-family: inherit;
 }
-select:focus, input:focus, textarea:focus {
-  border-color: #2F5496;
-  box-shadow: 0 0 0 3px rgba(47,84,150,.12);
-}
+select:focus, input:focus, textarea:focus { border-color: #2F5496; box-shadow: 0 0 0 3px rgba(47,84,150,.12); }
 select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23666' d='M6 8L0 0h12z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 13px center; padding-right: 36px; }
 textarea { resize: none; height: 78px; line-height: 1.5; }
 .amount-wrap { position: relative; }
 .baht-sign { position: absolute; left: 13px; top: 50%; transform: translateY(-50%); color: #888; font-size: 15px; pointer-events: none; }
 .amount-wrap input { padding-left: 28px; }
-.upload-zone {
-  border: 2px dashed #c5d4ea;
-  border-radius: 10px; padding: 20px 16px;
-  text-align: center; background: #f7f9fd;
-  cursor: pointer; position: relative; overflow: hidden;
-  transition: border-color .2s, background .2s;
-}
+.upload-zone { border: 2px dashed #c5d4ea; border-radius: 10px; padding: 20px 16px; text-align: center; background: #f7f9fd; cursor: pointer; position: relative; overflow: hidden; transition: border-color .2s, background .2s; }
 .upload-zone:hover { border-color: #2F5496; background: #f0f4fb; }
 .upload-zone.has-photo { border-style: solid; border-color: #70AD47; background: #f7fdf4; }
-.upload-zone input[type="file"] {
-  position: absolute; inset: 0; opacity: 0; cursor: pointer;
-  width: 100%; height: 100%;
-}
+.upload-zone input[type="file"] { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
 .upload-icon { font-size: 30px; line-height: 1; margin-bottom: 6px; }
 .upload-text { font-size: 13px; color: #666; line-height: 1.5; }
 .upload-hint { font-size: 11px; color: #aaa; margin-top: 3px; }
-.preview-img {
-  width: 100%; max-height: 180px; object-fit: cover;
-  border-radius: 8px; margin-top: 10px; display: none;
-}
-.remove-photo {
-  display: none; position: absolute; top: 8px; right: 8px;
-  background: rgba(231,76,60,.85); color: #fff;
-  border: none; border-radius: 50%; width: 24px; height: 24px;
-  font-size: 14px; cursor: pointer; line-height: 24px; text-align: center;
-  z-index: 2;
-}
-.submit-btn {
-  width: 100%; padding: 15px;
-  background: #1F3864; color: #fff;
-  border: none; border-radius: 12px;
-  font-size: 16px; font-weight: 700; font-family: inherit;
-  cursor: pointer; letter-spacing: .3px;
-  transition: background .2s, transform .1s;
-  box-shadow: 0 4px 14px rgba(31,56,100,.35);
-}
+.preview-img { width: 100%; max-height: 180px; object-fit: cover; border-radius: 8px; margin-top: 10px; display: none; }
+.remove-photo { display: none; position: absolute; top: 8px; right: 8px; background: rgba(231,76,60,.85); color: #fff; border: none; border-radius: 50%; width: 24px; height: 24px; font-size: 14px; cursor: pointer; line-height: 24px; text-align: center; z-index: 2; }
+.submit-btn { width: 100%; padding: 15px; background: #1F3864; color: #fff; border: none; border-radius: 12px; font-size: 16px; font-weight: 700; font-family: inherit; cursor: pointer; letter-spacing: .3px; transition: background .2s, transform .1s; box-shadow: 0 4px 14px rgba(31,56,100,.35); }
 .submit-btn:hover { background: #2F5496; }
 .submit-btn:active { transform: scale(.98); }
 .submit-btn:disabled { background: #aab; box-shadow: none; cursor: not-allowed; }
-#successScreen {
-  display: none; text-align: center; padding: 48px 20px;
-}
-.success-circle {
-  width: 80px; height: 80px; border-radius: 50%;
-  background: #e9f9ef; margin: 0 auto 16px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 40px;
-}
+#successScreen { display: none; text-align: center; padding: 48px 20px; }
+.success-circle { width: 80px; height: 80px; border-radius: 50%; background: #e9f9ef; margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; font-size: 40px; }
 .success-title { font-size: 22px; font-weight: 700; color: #1a7a3f; margin-bottom: 8px; }
 .success-detail { font-size: 14px; color: #666; line-height: 1.7; }
 .success-detail strong { color: #1F3864; }
-.new-btn {
-  margin-top: 28px; padding: 13px 36px;
-  background: #2F5496; color: #fff; border: none;
-  border-radius: 10px; font-size: 15px; font-weight: 600;
-  cursor: pointer; font-family: inherit;
-}
-#loadingOverlay {
-  display: none; position: fixed; inset: 0;
-  background: rgba(10,15,40,.6); z-index: 999;
-  align-items: center; justify-content: center; flex-direction: column;
-}
-.spinner {
-  width: 44px; height: 44px;
-  border: 4px solid rgba(255,255,255,.3);
-  border-top-color: #fff; border-radius: 50%;
-  animation: spin .75s linear infinite; margin-bottom: 14px;
-}
+.new-btn { margin-top: 28px; padding: 13px 36px; background: #2F5496; color: #fff; border: none; border-radius: 10px; font-size: 15px; font-weight: 600; cursor: pointer; font-family: inherit; }
+#loadingOverlay { display: none; position: fixed; inset: 0; background: rgba(10,15,40,.6); z-index: 999; align-items: center; justify-content: center; flex-direction: column; }
+.spinner { width: 44px; height: 44px; border: 4px solid rgba(255,255,255,.3); border-top-color: #fff; border-radius: 50%; animation: spin .75s linear infinite; margin-bottom: 14px; }
 .loading-text { color: #fff; font-size: 15px; font-weight: 600; }
 @keyframes spin { to { transform: rotate(360deg); } }
+.req-grid { display: flex; flex-direction: column; }
+.req-row { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f4fb; }
+.req-row:last-child { border-bottom: none; }
+.req-name { font-size: 14px; color: #333; font-weight: 500; flex: 1; }
+.qty-control { display: flex; align-items: center; gap: 10px; }
+.qty-btn { width: 34px; height: 34px; border: 1.5px solid #2F5496; border-radius: 8px; background: #fff; color: #2F5496; font-size: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-weight: 700; line-height: 1; padding: 0; font-family: inherit; transition: background .15s, color .15s; }
+.qty-btn:active { background: #2F5496; color: #fff; }
+.qty-input { width: 52px; text-align: center; border: 1.5px solid #dde3ee; border-radius: 8px; padding: 5px 4px; font-size: 15px; font-weight: 700; color: #1F3864; outline: none; font-family: inherit; -webkit-appearance: none; appearance: none; }
+.qty-input:focus { border-color: #2F5496; }
 .spacer { height: 16px; }
 </style>
 </head>
@@ -164,25 +106,26 @@ textarea { resize: none; height: 78px; line-height: 1.5; }
 
   <div class="container">
     <div id="formArea">
+
       <div class="card">
         <div class="section-label">📍 บ้าน &amp; วันที่</div>
         <div class="form-group">
           <label>เลือกบ้าน <span class="req">*</span></label>
           <select id="houseSelect">
-  <option value="">— เลือกบ้าน —</option>
-  <option>ฮิคาริ</option>
-  <option>โรวีนา</option>
-  <option>บ้านคุณกันต์ White Woot</option>
-  <option>บ้านคุณโจ้</option>
-  <option>บ้านพี่แมนพี่เจ M3</option>
-  <option>บ้านคุณแจ็คกี้ เจ็ดยอด</option>
-  <option>บ้านคุณแจ็คกี้ นิมมาน</option>
-  <option>พรีโม่</option>
-  <option>บ้านคุณสู้ ช้างเคี่ยน</option>
-  <option>โอลิเวอร์</option>
-  <option>บุญมาศ 309</option>
-  <option>บุญมาศ 508</option>
-</select>
+            <option value="">— เลือกบ้าน —</option>
+            <option>ฮิคาริ</option>
+            <option>โรวีนา</option>
+            <option>บ้านคุณกันต์ White Woot</option>
+            <option>บ้านคุณโจ้</option>
+            <option>บ้านพี่แมนพี่เจ M3</option>
+            <option>บ้านคุณแจ็คกี้ เจ็ดยอด</option>
+            <option>บ้านคุณแจ็คกี้ นิมมาน</option>
+            <option>พรีโม่</option>
+            <option>บ้านคุณสู้ ช้างเคี่ยน</option>
+            <option>โอลิเวอร์</option>
+            <option>บุญมาศ 309</option>
+            <option>บุญมาศ 508</option>
+          </select>
         </div>
         <div class="form-group">
           <label>วันที่</label>
@@ -193,7 +136,7 @@ textarea { resize: none; height: 78px; line-height: 1.5; }
       <div class="card">
         <div class="section-label">💰 รายการค่าใช้จ่าย</div>
         <div class="form-group">
-          <label>หมวดหมู่ <span class="req">*</span></label>
+          <label>หมวดหมู่</label>
           <select id="categorySelect">
             <option value="">— เลือกหมวดหมู่ —</option>
             <option>ค่าน้ำ</option>
@@ -207,7 +150,7 @@ textarea { resize: none; height: 78px; line-height: 1.5; }
           </select>
         </div>
         <div class="form-group">
-          <label>จำนวนเงิน (บาท) <span class="req">*</span></label>
+          <label>จำนวนเงิน (บาท)</label>
           <div class="amount-wrap">
             <span class="baht-sign">฿</span>
             <input type="number" id="amountInput" placeholder="0.00" step="0.01" min="0" inputmode="decimal">
@@ -243,9 +186,53 @@ textarea { resize: none; height: 78px; line-height: 1.5; }
         </div>
       </div>
 
-      <button class="submit-btn" id="submitBtn" onclick="submitForm()">
-        ✅ &nbsp;บันทึกข้อมูล
-      </button>
+      <div class="card">
+        <div class="section-label">📦 รายการเบิกของ</div>
+        <div class="req-grid">
+          <div class="req-row">
+            <span class="req-name">🪥 แปรงสีฟัน</span>
+            <div class="qty-control">
+              <button class="qty-btn" onclick="changeQty('brush',-1)">−</button>
+              <input type="number" class="qty-input" id="qty_brush" value="0" min="0" inputmode="numeric">
+              <button class="qty-btn" onclick="changeQty('brush',1)">+</button>
+            </div>
+          </div>
+          <div class="req-row">
+            <span class="req-name">🩹 สำลี</span>
+            <div class="qty-control">
+              <button class="qty-btn" onclick="changeQty('cotton',-1)">−</button>
+              <input type="number" class="qty-input" id="qty_cotton" value="0" min="0" inputmode="numeric">
+              <button class="qty-btn" onclick="changeQty('cotton',1)">+</button>
+            </div>
+          </div>
+          <div class="req-row">
+            <span class="req-name">🚿 หมวกอาบน้ำ</span>
+            <div class="qty-control">
+              <button class="qty-btn" onclick="changeQty('cap',-1)">−</button>
+              <input type="number" class="qty-input" id="qty_cap" value="0" min="0" inputmode="numeric">
+              <button class="qty-btn" onclick="changeQty('cap',1)">+</button>
+            </div>
+          </div>
+          <div class="req-row">
+            <span class="req-name">💧 น้ำดื่ม</span>
+            <div class="qty-control">
+              <button class="qty-btn" onclick="changeQty('water',-1)">−</button>
+              <input type="number" class="qty-input" id="qty_water" value="0" min="0" inputmode="numeric">
+              <button class="qty-btn" onclick="changeQty('water',1)">+</button>
+            </div>
+          </div>
+          <div class="req-row">
+            <span class="req-name">☕ กาแฟ</span>
+            <div class="qty-control">
+              <button class="qty-btn" onclick="changeQty('coffee',-1)">−</button>
+              <input type="number" class="qty-input" id="qty_coffee" value="0" min="0" inputmode="numeric">
+              <button class="qty-btn" onclick="changeQty('coffee',1)">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="submit-btn" id="submitBtn" onclick="submitForm()">✅ &nbsp;บันทึกข้อมูล</button>
       <div class="spacer"></div>
     </div>
 
@@ -267,9 +254,27 @@ const CONFIG = {
 let userProfile = null;
 const photoData = { slip: null, work: null };
 
+const REQ_ITEMS = [
+  { id: 'brush',  name: 'แปรงสีฟัน' },
+  { id: 'cotton', name: 'สำลี' },
+  { id: 'cap',    name: 'หมวกอาบน้ำ' },
+  { id: 'water',  name: 'น้ำดื่ม' },
+  { id: 'coffee', name: 'กาแฟ' },
+];
+
+function changeQty(id, delta) {
+  const el = document.getElementById('qty_' + id);
+  el.value = Math.max(0, parseInt(el.value || 0) + delta);
+}
+
+function getRequisition() {
+  return REQ_ITEMS
+    .map(i => ({ ...i, qty: parseInt(document.getElementById('qty_' + i.id).value || 0) }))
+    .filter(i => i.qty > 0);
+}
+
 window.addEventListener('load', async () => {
   const hasRealLiffId = CONFIG.LIFF_ID && CONFIG.LIFF_ID !== 'YOUR_LIFF_ID_HERE';
-
   if (hasRealLiffId) {
     try {
       await Promise.race([
@@ -278,21 +283,14 @@ window.addEventListener('load', async () => {
       ]);
       if (liff.isLoggedIn()) {
         userProfile = await liff.getProfile();
-      } else {
-        liff.login();
-        return;
-      }
+      } else { liff.login(); return; }
     } catch (e) {
-      console.warn('[LIFF] init failed:', e.message);
       userProfile = { displayName: 'ทดสอบ', pictureUrl: '', userId: 'dev' };
     }
   } else {
     userProfile = { displayName: 'ทดสอบ', pictureUrl: '', userId: 'dev' };
   }
-
-  if (userProfile.pictureUrl) {
-    document.getElementById('userAvatar').src = userProfile.pictureUrl;
-  }
+  if (userProfile.pictureUrl) document.getElementById('userAvatar').src = userProfile.pictureUrl;
   document.getElementById('userName').textContent = userProfile.displayName;
   document.getElementById('dateInput').value = todayISO();
   hideLoading();
@@ -302,11 +300,7 @@ window.addEventListener('load', async () => {
 function handlePhoto(input, key) {
   const file = input.files[0];
   if (!file) return;
-  if (file.size > 5 * 1024 * 1024) {
-    alert('ไฟล์ใหญ่เกิน 5MB กรุณาเลือกรูปใหม่');
-    input.value = '';
-    return;
-  }
+  if (file.size > 5 * 1024 * 1024) { alert('ไฟล์ใหญ่เกิน 5MB'); input.value = ''; return; }
   compressImage(file, 1200, 0.78, base64 => {
     photoData[key] = base64;
     const preview = document.getElementById(key + 'Preview');
@@ -318,8 +312,7 @@ function handlePhoto(input, key) {
 }
 
 function removePhoto(key, e) {
-  e.stopPropagation();
-  e.preventDefault();
+  e.stopPropagation(); e.preventDefault();
   photoData[key] = null;
   document.getElementById(key + 'File').value = '';
   document.getElementById(key + 'Preview').style.display = 'none';
@@ -337,7 +330,7 @@ function compressImage(file, maxPx, quality, callback) {
       let w = img.width, h = img.height;
       if (w > maxPx || h > maxPx) {
         if (w > h) { h = Math.round(h * maxPx / w); w = maxPx; }
-        else        { w = Math.round(w * maxPx / h); h = maxPx; }
+        else { w = Math.round(w * maxPx / h); h = maxPx; }
       }
       canvas.width = w; canvas.height = h;
       canvas.getContext('2d').drawImage(img, 0, 0, w, h);
@@ -348,55 +341,69 @@ function compressImage(file, maxPx, quality, callback) {
   reader.readAsDataURL(file);
 }
 
+async function sendToGAS(payload) {
+  const res = await fetch(CONFIG.GAS_URL, {
+    method: 'POST', body: JSON.stringify(payload),
+    headers: { 'Content-Type': 'text/plain' },
+  });
+  const json = await res.json();
+  if (json.status !== 'ok') throw new Error(json.message || 'ไม่ทราบสาเหตุ');
+  return json;
+}
+
 async function submitForm() {
   const house    = document.getElementById('houseSelect').value.trim();
   const date     = document.getElementById('dateInput').value;
   const category = document.getElementById('categorySelect').value.trim();
   const amount   = parseFloat(document.getElementById('amountInput').value);
   const notes    = document.getElementById('notesInput').value.trim();
+  const reqItems = getRequisition();
+  const hasExpense = !!(category && amount > 0);
+  const hasReq     = reqItems.length > 0;
 
-  if (!house)                { shake('houseSelect');    return; }
-  if (!category)             { shake('categorySelect'); return; }
-  if (!amount || amount <= 0){ shake('amountInput');    return; }
+  if (!house) { shake('houseSelect'); return; }
+  if (!hasExpense && !hasReq) {
+    alert('กรุณากรอกค่าใช้จ่าย หรือเลือกรายการเบิกของอย่างน้อย 1 รายการ');
+    return;
+  }
+  if (hasExpense) {
+    if (!category) { shake('categorySelect'); return; }
+    if (!amount || amount <= 0) { shake('amountInput'); return; }
+  }
 
   showLoading('กำลังบันทึก...');
   document.getElementById('submitBtn').disabled = true;
 
   try {
-    const payload = {
-      date, house, category, amount, notes,
-      submittedBy: userProfile.displayName,
-      userId:      userProfile.userId,
-      slipPhoto:   photoData.slip || null,
-      workPhoto:   photoData.work || null,
-    };
-    const res  = await fetch(CONFIG.GAS_URL, {
-      method:  'POST',
-      body:    JSON.stringify(payload),
-      headers: { 'Content-Type': 'text/plain' },
-    });
-    const json = await res.json();
-    if (json.status === 'ok') {
-      hideLoading();
-      showSuccess(house, category, amount);
-    } else {
-      throw new Error(json.message || 'ไม่ทราบสาเหตุ');
+    const promises = [];
+    if (hasExpense) {
+      promises.push(sendToGAS({ date, house, category, amount, notes,
+        submittedBy: userProfile.displayName, userId: userProfile.userId,
+        slipPhoto: photoData.slip || null, workPhoto: photoData.work || null }));
     }
+    if (hasReq) {
+      promises.push(sendToGAS({ date, house, category: 'เบิกของ', amount: 0,
+        notes: reqItems.map(i => `${i.name} x${i.qty}`).join(', '),
+        submittedBy: userProfile.displayName, userId: userProfile.userId,
+        slipPhoto: null, workPhoto: null }));
+    }
+    await Promise.all(promises);
+    hideLoading();
+    showSuccess(house, hasExpense ? category : 'เบิกของ', hasExpense ? amount : 0, hasReq ? reqItems : []);
   } catch (err) {
     hideLoading();
     document.getElementById('submitBtn').disabled = false;
-    alert('เกิดข้อผิดพลาด: ' + err.message + '\n\nกรุณาลองใหม่อีกครั้ง');
+    alert('เกิดข้อผิดพลาด: ' + err.message);
   }
 }
 
-function showSuccess(house, category, amount) {
+function showSuccess(house, category, amount, reqItems) {
   document.getElementById('formArea').style.display = 'none';
-  document.getElementById('successDetail').innerHTML =
-    `<strong>${house}</strong> · <strong>${category}</strong><br>
-     จำนวน <strong>฿${amount.toLocaleString('th')}</strong> บาท<br>
-     <span style="font-size:12px;color:#aaa;margin-top:4px;display:block">
-       บันทึกโดย ${userProfile.displayName}
-     </span>`;
+  let html = `<strong>${house}</strong>`;
+  if (category && amount > 0) html += ` · <strong>${category}</strong><br>จำนวน <strong>฿${amount.toLocaleString('th')}</strong> บาท`;
+  if (reqItems && reqItems.length > 0) html += `<br><span style="font-size:13px;color:#2F5496;margin-top:4px;display:block">📦 เบิกของ: ${reqItems.map(i => `${i.name} x${i.qty}`).join(', ')}</span>`;
+  html += `<span style="font-size:12px;color:#aaa;margin-top:4px;display:block">บันทึกโดย ${userProfile.displayName}</span>`;
+  document.getElementById('successDetail').innerHTML = html;
   document.getElementById('successScreen').style.display = 'block';
 }
 
@@ -411,6 +418,7 @@ function resetForm() {
     document.getElementById(key+'Zone').classList.remove('has-photo');
     document.getElementById(key+'Remove').style.display = 'none';
   });
+  REQ_ITEMS.forEach(i => { document.getElementById('qty_' + i.id).value = 0; });
   document.getElementById('submitBtn').disabled = false;
   document.getElementById('successScreen').style.display = 'none';
   document.getElementById('formArea').style.display = 'block';
@@ -430,12 +438,8 @@ function showLoading(text) {
   document.getElementById('loadingText').textContent = text || 'กำลังโหลด...';
   document.getElementById('loadingOverlay').style.display = 'flex';
 }
-function hideLoading() {
-  document.getElementById('loadingOverlay').style.display = 'none';
-}
-function todayISO() {
-  return new Date().toISOString().slice(0, 10);
-}
+function hideLoading() { document.getElementById('loadingOverlay').style.display = 'none'; }
+function todayISO() { return new Date().toISOString().slice(0, 10); }
 </script>
 </body>
 </html>
